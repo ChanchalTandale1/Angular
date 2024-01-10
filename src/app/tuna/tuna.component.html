@@ -1,0 +1,17 @@
+<h2>Assignment 3</h2><br><br>
+
+<button class="btn-primary" (click)="toggleDetails()">Display Details</button><br><br>
+
+<p class="para" *ngIf="showDetails" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ea, eligendi sapiente quae iusto eius veritatis illo aliquid perspiciatis magni dolorum assumenda pariatur inventore!</p>
+
+<!-- <div *ngFor="let item of [1,2,3,4,5,6,7,8,9,10]">
+    <p>{{ item }}</p>
+</div> -->
+<h3>Button Click History:</h3>
+    <ul>
+        <li *ngFor="let click of buttonClicks; let i = index"
+        [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'white'}"
+        [ngClass]="{'blue-text': i >= 4}">
+      {{ click }}
+    </li>
+    </ul>
