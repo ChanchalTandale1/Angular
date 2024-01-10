@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import{ContainerComponent} from './Container/container.component';
-import { NavComponent } from './nav/nav.component';
+import { UsernameComponent } from './username/username.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerComponent,
-    NavComponent
+    UsernameComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
